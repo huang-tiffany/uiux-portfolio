@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIFFANY HUANG</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="" class="button"
+        ><img id="logo" alt="Logo" src="public/logo.png"
+      /></a>
+      <p>v. 2024</p>
+    </nav>
+
+    <main>
+      <div class="intro-container">
+        <h1>TIFFANY＊HUANG</h1>
+        <h2>
+          creative technologist studying industrial design at risd and computer
+          science at brown
+          <br />
+          ⤷ currently designing at ramp and (soon-to-be) developing at nvidia
+        </h2>
+        <div class="links">
+          <a href="https://instagram.com/relatiffity" target="_blank"
+            >instagram</a
+          >
+          <a href="https://th-archive.github.io/" target="_blank">archive</a>
+          <a
+            href="https://www.linkedin.com/in/tiffany-huang-32697722a/"
+            target="_blank"
+            >linkedin</a
+          >
+        </div>
+      </div>
+
+      <div class="case-study-container">
+        <h2 class="header">CASE STUDIES</h2>
+        <div class="case-studies">
+          <div class="case-study">
+            <a class="button" onclick="relocate('responsive-redesign.html')">
+              <img
+                src="public/responsive redesign hero.png"
+                alt="Responsive Redesign Hero"
+              />
+            </a>
+            <h2>
+              <a href="responsive-redesign.html">TP TEA Responsive Redesign</a>
+            </h2>
+            <p>
+              Analyzing, redesigning, and redeveloping TP TEA's existing webpage
+              to better incorporate elements of accessible design.
+            </p>
+          </div>
+          <div class="case-study">
+            <a onclick="relocate('development.html')" class="button">
+              <img src="public/development hero.gif" alt="Development Hero" />
+            </a>
+            <h2><a href="development.html">Museums in New York</a></h2>
+            <p>
+              Creating a fully functional aggregator for organizing museum trips
+              in New York based on competitor analysis.
+            </p>
+          </div>
+          <div class="case-study">
+            <a onclick="relocate('iterative-design.html')" class="button">
+              <img
+                src="public/iterative design hero.jpeg"
+                alt="Iterative Design Hero"
+              />
+            </a>
+            <h2>
+              <a href="iterative-design.html">Zest Bulk Shipping Feature</a>
+            </h2>
+            <p>
+              Working with a team to add and prototype new shipping features to
+              a corporate gifting start-up's design system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const relocate = (newLoc) => {
+      const body = document.querySelector("body");
+      if (body) {
+        body.classList.add("fadeout");
+      }
+      setTimeout(() => {
+        window.location.replace(newLoc);
+      }, 500);
+    };
+  </script>
+</html>

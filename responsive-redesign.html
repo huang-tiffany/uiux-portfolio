@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" class="case-study-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIFFANY HUANG ＊ TP TEA RESPONSIVE REDESIGN</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="case-study-page">
+    <nav>
+      <div>TP TEA RESPONSIVE REDESIGN</div>
+      <a
+        href="https://huang-tiffany.github.io/responsive-redesign/"
+        target="_blank"
+        >DEPLOYED SITE</a
+      >
+      <div>2024</div>
+      <a onclick="relocate('index.html')" class="button">×</a>
+    </nav>
+    <main>
+      <div class="intro-container">
+        <div class="intro">
+          <div class="metadata">
+            <strong>Role</strong> Designer, Developer
+            <br />
+            <strong>Medium</strong> Figma, HTML, CSS
+            <br />
+            <strong>Timeline</strong> Spring 2024, 3 weeks
+          </div>
+          <div class="summary">
+            <h2>
+              Redesigning a preexisting webpage to adhere more closely to both
+              design principles and accessibility guidelines by creating lofi
+              and hifi wireframes, creating a style guide, and developing the
+              page with HTML and CSS.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="page-section">
+          <div class="subheader">01 <strong>The Problem</strong></div>
+          <div class="content">
+            <p>
+              Although TP TEA, my favorite boba store back at home, already has
+              a branded interface, I wanted to bring a more technical and
+              user-driven focus to a website that currently seems to be more
+              storytelling and aesthetic-driven.
+            </p>
+            <img src="/public/image1.png" alt="Current TP TEA Website" />
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">
+            02 <strong>Identifying Usability Problems</strong>
+          </div>
+          <div class="content">
+            <p>
+              While analyzing the website, I categorized its usability issues
+              into three categories: efficiency, learnability, and memorability.
+            </p>
+            <div class="three-up">
+              <div>
+                01 <strong>Efficiency</strong> <br />Interactive elements like
+                the navigation bar only appear once the user starts scrolling,
+                which costs extra time and can confuse users due to its
+                unconventional lack of appearance.
+              </div>
+              <div>
+                02 <strong>Learnability</strong> <br />Some elements, despite
+                being on the English version of the site, are still written in
+                Chinese; outside of the inconsistent language, animations on the
+                homepage also load in at different rates, which can lead to a
+                less smooth user experience.
+              </div>
+              <div>
+                03 <strong>Memorability</strong> <br />The lengthy summaries of
+                each section on the homepage become redundant with the other
+                pages on the site, which can slow users down when trying to
+                revisit a specific area of the site.
+              </div>
+            </div>
+            <img
+              src="public/image2.png"
+              alt="WebAIM screenshot of TP TEA site"
+            />
+            <p>
+              Using WebAIM WAVE, software that detects various accessibility
+              issues for the web, I also discovered other errors, including
+              missing alternative text for images, empty links, and broken ARIA
+              references, in addition to other alerts.
+            </p>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">03 <strong>Sketches</strong></div>
+          <div class="content">
+            <p>
+              For my sketches, I focused on both the structure of the page and
+              on working through sections where I felt visual hierarchy was a
+              bit more disorganized.
+            </p>
+            <img src="public/ideation.jpg" alt="Ideation sketches" />
+            <p>
+              The final sketch combined a few elements from the initial
+              sketches, with a simplified page structure and modular components.
+              Although it stayed pretty loyal to the original site, it also
+              reorganized the information in a way that was more consistent and
+              readable.
+            </p>
+            <img src="public/final.jpg" alt="Final sketches" />
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">04 <strong>Lofi Wireframes</strong></div>
+          <div class="content">
+            <p>
+              Taking these into Figma, I drew up some wireframes to resolve some
+              of the accessibility issues from before.
+              <br /><br />
+              Some of the improvements made to the page included a fixed
+              navigation bar for easy access to information, combining related
+              page sections to condense the page, placing buttons in consistent
+              and identifiable locations, adding a site directory footer that
+              groups a link index with TP TEA's social icons, and eliminating
+              pop-ups. On smaller screen sizes, horizontal scrolling is also
+              introduced to save vertical space.
+            </p>
+            <div class="three-up">
+              <img
+                class="desktop"
+                src="public/desktop lofi.png"
+                alt="Desktop lofi wireframe"
+              />
+              <img
+                class="tablet"
+                src="public/tablet lofi.png"
+                alt="Tablet lofi wireframe"
+              />
+              <img
+                class="mobile"
+                src="public/mobile lofi.png"
+                alt="Mobile lofi wireframe"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">05 <strong>Style Guide</strong></div>
+          <div class="content">
+            <p>
+              The style guide sums up the general design direction for the hifi
+              mockups, including type, color, graphic, and interaction.
+            </p>
+            <img src="public/style guide.jpg" alt="Style Guide" />
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">06 <strong>Hifi Wireframes</strong></div>
+          <div class="content">
+            <p>
+              Each of the hifi mockups goes into more detail on the designs for
+              each screen size, based on the lofi wireframes.
+            </p>
+            <div class="three-up">
+              <img
+                class="desktop"
+                src="public/Laptop hifi.jpg"
+                alt="Desktop hifi wireframe"
+              />
+              <img
+                class="tablet"
+                src="public/Tablet hifi.jpg"
+                alt="Tablet hifi wireframe"
+              />
+              <img
+                class="mobile"
+                src="public/Mobile hifi.jpg"
+                alt="Mobile hifi wireframe"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">07 <strong>Development</strong></div>
+          <div class="content">
+            <p>
+              The final redesign implements all of the hifi designs from before,
+              with some minor tweaks to spacing to adapt to real-life sizing and
+              modularity of CSS components.
+            </p>
+            <video webkit-playsinline="true" playsinline autoplay loop muted>
+              <source
+                src="public/responsive redesign demo.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">08 <strong>Final Insights</strong></div>
+          <div class="content">
+            <p>
+              Even though I have had a decent amount of frontend and UI/UX
+              experience, I still felt like I was able to learn some more CSS
+              techniques that I hadn't known before, and seeing this website
+              through a more accessibility-focused lens rather than one that was
+              more graphic design-focused was also interesting as well.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const relocate = (newLoc) => {
+      const body = document.querySelector("body");
+      if (body) {
+        body.classList.add("fadeout");
+      }
+      setTimeout(() => {
+        window.location.replace(newLoc);
+      }, 500);
+    };
+  </script>
+</html>

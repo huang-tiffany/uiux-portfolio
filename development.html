@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="case-study-page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIFFANY HUANG ＊ MUSEUMS IN NEW YORK</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body class="case-study-page">
+    <nav>
+      <div>MUSEUMS IN NEW YORK</div>
+      <a href="https://development-puce.vercel.app/" target="_blank"
+        >DEPLOYED SITE</a
+      >
+      <div>2024</div>
+      <a onclick="relocate('index.html')" class="button">×</a>
+    </nav>
+    <main>
+      <div class="intro-container">
+        <div class="intro">
+          <div class="metadata">
+            <strong>Role</strong> Designer, Developer
+            <br />
+            <strong>Medium</strong> Figma, HTML, CSS, React
+            <br />
+            <strong>Timeline</strong> Spring 2024, 3 weeks
+          </div>
+          <div class="summary">
+            <h2>
+              Designing and implementing a functional aggregator for planning
+              art and design museum trips in New York, with features decided
+              based on competitor analysis of reference sites in adjacent
+              industries.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="page-section">
+          <div class="subheader">01 <strong>The Problem</strong></div>
+          <div class="content">
+            <p>
+              Though review and travel sites have existed for years, current
+              databases house disparate sources of information in widely varying
+              interfaces that make information gathering difficult. As such, I
+              sought to design a single source of New York museum travel
+              information, starting with its most famous destinations.
+            </p>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">02 <strong>Competitive Analysis</strong></div>
+          <div class="content">
+            <p>
+              Before designing, I analyzed Spotify, Pinterest, and Amazon as
+              examples of different kinds of aggregators to determine the most
+              important features to implement. Although the three sites had a
+              lot of features in common, their designs differed slightly within
+              how they balanced master lists and user-created lists.
+            </p>
+            <img
+              src="public/competitive analysis.jpg"
+              alt="Competitive analysis of Spotify, Pinterest, and Amazon"
+            />
+            <div class="three-up">
+              <div>
+                01 <strong>Spotify</strong> <br />Despite lacking a “master
+                list” for all saved songs, Spotify’s extensive filtering and
+                organization, combined with its simplification of actions into
+                streamlined icons, declutters the interface to highlight main
+                actions for users to take.
+              </div>
+              <div>
+                02 <strong>Pinterest</strong> <br />Pinterest had more of a
+                simplified layout, eliminating filters while using a tree layout
+                and one-click saves to layer secondary actions under the most
+                pertinent ones.
+              </div>
+              <div>
+                03 <strong>Amazon</strong> <br />Combining qualitative customer
+                ratings with to quantitative metrics, along with the
+                straightforward grouping and layout, makes Amazon’s design more
+                robust while allowing users to do more without compromising
+                visual clarity.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">03 <strong>Wireframing Process</strong></div>
+          <div class="content">
+            <p>
+              Although having a master list, one-click save, and view specs
+              weren’t universal across the aggregators, they still seemed to be
+              beneficial for the user experience, which is why I decided to
+              implement these three functions as part of my website.
+
+              <br /><br />
+
+              Starting with lofi mockups, I sketched various screens for how the
+              user journey might look as users navigate through the site.
+              Considering the interfacing of different menus, I also played
+              around with page layout and how it might be affected by the
+              opening and closing of different compartments on the page.
+            </p>
+            <img src="public/dev lofi.png" alt="Lofi wireframes" />
+            <p>
+              After some revision, I took the lofi mockups into a higher
+              fidelity, adding color and font to determine the visual style of
+              the pages. The designs changed throughout the development process
+              as I discovered holes in my user flow and changed the designs to
+              match potential user actions, but the core of the visual identity
+              and experience stayed relatively consistent.
+            </p>
+            <img src="public/dev hifi.png" alt="Hifi wireframes" />
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">04 <strong>Functionality</strong></div>
+          <div class="content">
+            <p>
+              The final interface details various museums in New York for
+              visiting or learning about art history. The two buttons in the top
+              left corner allow for viewing two different aggregators, one for a
+              master list (favorites), and another for a more specific list
+              (save for later).
+            </p>
+            <video webkit-playsinline="true" playsinline autoplay loop muted>
+              <source src="public/development demo.mp4" type="video/mp4" />
+            </video>
+            <p>
+              Within these lists, users have the ability to switch between grid
+              and list views of the data. The three menus employ similar design
+              principles so they can be grouped visually and experienced
+              similarly in terms of the visual language, actions, and motion
+              implemented.
+            </p>
+            <img src="public/filter.png" alt="Filtering functionality" />
+            <p>
+              Within each card displayed on the page, users can view information
+              and visit links to the museum sites upon hovering, as well as add
+              and remove cards from both lists. A filter menu, opened via the
+              icon in the bottom left, allows for users to simultaneously sort
+              by museum ticket price and filter based on area and genre. The
+              number of results, like the number of favorited or saved items, is
+              displayed in the filter menu for consistency and to show when
+              there may be no results returned. All of the menus have the
+              ability to clear filters or aggregated items.
+            </p>
+          </div>
+        </div>
+        <div class="page-section">
+          <div class="subheader">08 <strong>Final Insights</strong></div>
+          <div class="content">
+            <p>
+              Overall, even though it was a difficult process to navigate
+              through the different hooks while keeping track of all the moving
+              parts of my application, I thought it was an informative way of
+              translating market research into stronger products. Additionally,
+              finding the most visually appealing way of displaying data while
+              creating a fluid and satisfying experience is an ongoing
+              challenge, but it was a fulfilling way to learn how translating
+              designs into code could be applied to real-life projects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const relocate = (newLoc) => {
+      const body = document.querySelector("body");
+      if (body) {
+        body.classList.add("fadeout");
+      }
+      setTimeout(() => {
+        window.location.replace(newLoc);
+      }, 500);
+    };
+  </script>
+</html>
