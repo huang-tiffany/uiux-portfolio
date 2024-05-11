@@ -92,6 +92,16 @@ main {
   line-height: 1em;
 }
 
+.case-study-page h1 {
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.case-study-page h1::before {
+  content: "＊ ";
+  font-weight: 300;
+}
+
 .intro-container h2 {
   margin-bottom: 2em;
   font-size: 1.25em;
@@ -251,6 +261,10 @@ a:hover {
   min-width: calc(65% - 3em);
   text-align: left;
   display: flex;
+}
+
+.case-study-page .intro .summary {
+  flex-direction: column;
 }
 
 .case-study-page .intro .metadata {
